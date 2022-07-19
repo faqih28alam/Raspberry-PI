@@ -15,18 +15,13 @@ def handle(msg):
     elif command == 'Good afternoon':
         bot.sendMessage(chat_id, "Hi good afternoon")
 
-bot = telepot.Bot('5428127269:AAGjOTfsnRYSJTI4u3FTD80g9u4qsUg4XQY')
+bot = telepot.Bot('YOUR OWN TELEBOT TOKEN')
 #bot.getMe()
 bot.message_loop(handle)
 print("i amm listening...")
-bot.sendMessage('1295163847', "Hi good morning")
+bot.sendMessage('CHAT ID YOU WANT TO SEND', "Hi good morning")
 
-# #id 5531973323
-# #token 5428127269:AAGjOTfsnRYSJTI4u3FTD80g9u4qsUg4XQY
-# #token pst 5088878755:AAGf9z5zDYyUJ97ewQOq9tEtwD1uyXjoYVA 
-# #token pst lama 5010993963:AAGWjOROh87ujarCBL86-u6Yn-bJuhx5yi8
-# #chat_id faqih28alam 1295163847
-
+# ANOTHER CODE YOU COULD TRY
 # import time
 # import random
 # import datetime
@@ -58,7 +53,7 @@ bot.sendMessage('1295163847', "Hi good morning")
 #     elif command == '/time':
 #         bot.sendMessage(chat_id, str(datetime.datetime.now()))
 # 
-# bot = telepot.Bot('5088878755:AAGf9z5zDYyUJ97ewQOq9tEtwD1uyXjoYVA')
+# bot = telepot.Bot('YOUR OWN TELEBOT TOKEN')
 # 
 # MessageLoop(bot, handle).run_as_thread()
 # print ('I am listening ...')
