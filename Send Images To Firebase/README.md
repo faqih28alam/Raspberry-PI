@@ -9,7 +9,12 @@ This Code will show you how to send images from your raspberry pi to firebase :
 ![image](https://user-images.githubusercontent.com/80795963/180497450-42308d5f-947a-4ba6-a56d-668242f0e324.png)
 ![image](https://user-images.githubusercontent.com/80795963/180497795-ae76d7da-7818-4005-b550-35a6061539b6.png)
 ![image](https://user-images.githubusercontent.com/80795963/180498207-60b921ca-f7bf-49b1-963a-ef5c97f76e2d.png)
+![image](https://user-images.githubusercontent.com/80795963/180498587-a7e3e994-d4c0-46d3-8562-40a42978ddfd.png)
+![image](https://user-images.githubusercontent.com/80795963/180498872-9003bae5-a619-40c0-8d39-27ef68d1e7bb.png)
 
 2. 
 
 Fire Base : https://firebase.google.com/
+
+reference:<br>
+https://www.youtube.com/watch?v=om545WbUh2I&t=3s
