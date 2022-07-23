@@ -11,15 +11,15 @@ This Code will show you how to send images from your raspberry pi to firebase :
 ![image](https://user-images.githubusercontent.com/80795963/180498207-60b921ca-f7bf-49b1-963a-ef5c97f76e2d.png)
 ![image](https://user-images.githubusercontent.com/80795963/180498587-a7e3e994-d4c0-46d3-8562-40a42978ddfd.png)
 ![image](https://user-images.githubusercontent.com/80795963/180498872-9003bae5-a619-40c0-8d39-27ef68d1e7bb.png)
-![image](https://user-images.githubusercontent.com/80795963/180591927-cff4b742-76c0-4b24-a174-a75ddcc2d036.png)
-rules_version = '2';
-service firebase.storage {
-  match /b/{bucket}/o {
-    match /{allPaths=**} {
-      allow read, write;
-    }
-  }
-}
+![image](https://user-images.githubusercontent.com/80795963/180591927-cff4b742-76c0-4b24-a174-a75ddcc2d036.png)<br>
+rules_version = '2';<br>
+service firebase.storage {<br>
+  match /b/{bucket}/o {<br>
+    match /{allPaths=**} {<br>
+      allow read, write;<br>
+    }<br>
+  }<br>
+}<br>
 ![image](https://user-images.githubusercontent.com/80795963/180591973-ad785604-457c-4d92-875a-6180d0101c80.png)
 ![image](https://user-images.githubusercontent.com/80795963/180592031-aeaee88c-ba2d-461a-be3f-1b33efb6061b.png)
 ![image](https://user-images.githubusercontent.com/80795963/180592089-b5ed18aa-db4b-4331-af40-5726f9dfce22.png)
