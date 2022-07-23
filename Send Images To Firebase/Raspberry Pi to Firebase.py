@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO 
 GPIO.setwarnings(False) 
 GPIO.setmode(GPIO.BOARD) 
-GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(12, GPIO.IN)     # Declaring the input pin
 from datetime import datetime
 from picamera import PiCamera
 from time import sleep
@@ -10,14 +10,14 @@ import os
 import pyrebase
 
 firebaseConfig = {
-    'apiKey': "XXXXX",
-    'authDomain': "XXXXX",
-    'databaseURL': "XXXXX",
-    'projectId': "XXXXX",
-    'storageBucket': "XXXXX",
-    'messagingSenderId': "XXXXX",
-    'appId': "XXXXX",
-    'measurementId': "XXXXX"
+    'apiKey': ".....",
+    'authDomain': ".....",
+    'databaseURL': ".....",
+    'projectId': ".....",
+    'storageBucket': ".....",
+    'messagingSenderId': ".....",
+    'appId': ".....",
+    'measurementId': "....."
 
 }
 
@@ -29,7 +29,7 @@ camera = PiCamera()
 
 while True: 
   try:
-    if GPIO.input(10) == GPIO.HIGH:
+    if GPIO.input(12) == GPIO.LOW:
         print("pushed")
         now = datetime.now()
         dt = now.strftime("%d%m%Y%H:%M:%S")
@@ -41,7 +41,7 @@ while True:
         os.remove(name)
         print("File Removed")
         sleep(2)
-	
-	
+        
+        
   except:
         camera.close()
